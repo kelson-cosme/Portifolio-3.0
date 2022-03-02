@@ -26,9 +26,9 @@ function novaHora() {
 
     if (minuto < 10){
         minuto = "0" + minuto;
-    } else if (dia < 10){
+    } if (dia < 10){
         dia = "0" + dia;
-    } else if (mes < 10){
+    } if (mes < 10){
         mes = "0" + (1 + mes);
     } 
 
