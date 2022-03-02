@@ -1,0 +1,123 @@
+
+@media screen and (max-width: 767px) {
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+ 
+    .slide{
+        margin: auto;
+        margin-top: 2vh;
+        width: calc(100% - 10vw);    
+
+        height: 30vh;
+        overflow: hidden;
+        border-radius: 15px;
+        transition: all 0.4s;
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.357);
+    }
+    .slides{
+        display: flex;
+        
+    }
+    .slides a{
+        width: 100%;
+    }
+    .images{
+        display: flex;
+        min-width: 100%;
+        height: 30vh;
+    
+        background-size: cover;
+        background-position: center;
+    }
+    .i1{
+        background-image: url("/imgs/mobile/slide/blog.png");
+    }
+    .i2{
+        background-image: url("/imgs/mobile/slide/feliznatal.png");
+    }
+    .i3{
+        background-image: url("/imgs/mobile/slide/jordanshoes.png");
+    }
+    .i4{
+        background-image: url("/imgs/mobile/slide//kenai.png");
+    }
+    .i5{
+        background-image: url("/imgs/mobile/slide/login.png");
+    }
+    .i6{
+        background-image: url("/imgs/mobile/slide/loki.png");
+    }
+    .i7{
+        background-image: url("/imgs/mobile/slide/onePage.png");
+    }
+    .i8{
+        background-image: url("/imgs/mobile/slide/rachi.png");
+    }
+    .i9{
+        background-image: url("/imgs/mobile/slide/studioghibli.png");
+    }
+
+    #atual{
+        transition: all 1s;
+    }
+    .botoes{
+        margin-top: -18vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn{
+        display: flex;
+        border-radius: 40%;
+        background-color: rgba(0, 0, 0, 0.261);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.4s;
+        font-size: 1.7em;
+        margin-bottom: -5px;
+    }
+    .btn:hover{
+        transform: scale(1.2);
+    }
+    #voltar{
+        top: 30%;
+        left: 10%;
+    }
+    #next{
+        top: 30%;
+        right: 10%;
+    }
+    .balls{
+        margin: auto;
+        margin-top: -20px;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    
+    }
+    .balls div{
+        transition: all  0.5s;
+        border: 2px solid #ffff;
+        padding: .5vw;
+        border-radius: 50%;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    .balls div:hover{
+        background-color: #fff;
+    }
+    .imgAtual{
+        transition: all;
+        background-color: #fff;
+    }
+    
+}

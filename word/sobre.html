@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/word/styleWord.css">
+    <title>Curriculo</title>
+</head>
+<body>
+    <section class="corpo">
+        <header>
+            <img width="100%" src="/word/imgs/headerWord.png">
+            <a href="/index.html"><div class="fechar">
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div></a>
+
+
+        </header>
+
+        <div class="texto">
+           <iframe width="100%" height="100%" src="/word/Kelson+_Cosme+_curriculo.pdf" frameborder="0"></iframe>
+        </div>
+
+        <div class="espaco"></div>
+
+
+        <footer class="baixo">
+            <img width="100%" src="/word/imgs/footer.png" alt="">
+        </footer>
+
+
+
+
+
+
+
+
+
+
+        <footer class="rodape">
+
+            <div class="rodapeEsquerda">
+
+                <div class="aparecer" id="barraIniciar">
+                        
+                        <div class="user">
+                            <div class="usuario">
+                                Kelson
+                            </div>
+                        </div>
+
+                        <div class="barraEsquerda">
+                            <ul>
+                                <li><p>Curriculo</p></li>
+                                <li><p>Projetos</p></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="barraDireita">
+                            <ul class="listaDireita">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+
+                            </ul>
+                        </div>
+                </div>
+               
+
+
+                <div id="iniciar" class="rodapeImg" onclick="barraInicial()">
+                    <img src="/imgs/windowsIniciar.png" alt="">
+                </div>
+
+                <div onclick="pesquisar()" class="pesquisa">
+                    <div class="lupa"><img src="/imgs/lupa.png" alt=""></div>
+                    <input id="lupa"  onkeyup = "handleFilter()" placeholder="Digite aqui para pesquisar" type="text" name="" id="">
+                    <div class="mic"></div>
+                </div>
+
+
+                <!-- Projetos para pesquisar ----------------------------- -->
+
+                <div id="barraPesquisa" class="pesquisa2" >
+                    <h2>Tudo</h2>
+
+                    <ul id="lista">
+                        <a href="#" target="_blank" id="linksFora" class="">Blog</a>
+                        <a href="#" target="_blank" id="linksFora" class="">Conversor de tempertura</a>
+                        <a href="#" target="_blank" id="linksFora" class="">Feliz Natal</a>
+                        <a href="#" target="_blank" id="linksFora" class="">Kenai</a>
+                        <a href="#" target="_blank" id="linksFora" class="">Loja Virtual</a>
+                        <a href="#" target="_blank" id="linksFora" class="">Loki</a>
+                        <a href="#" target="_blank" id="linksFora" class="">OnePage</a>
+                        <a href="#" target="_blank" id="linksFora" class="">Rachi</a>
+                        <a href="#" target="_blank" id="linksFora" class="">StudioGhibli</a>
+                        <a href="#" target="_blank" id="linksFora" class="">Tela de Login</a>
+                    </ul>
+                </div>
+
+                <div id="overlay">
+
+                </div>
+
+
+            </div>
+
+
+            <div class="rodapeDireita">
+                <div class="tm"><img src="/imgs/volume.png" alt=""></div>
+                <div class="tm"><img src="/imgs/net .png" alt=""></div>
+                <div class="horario">
+                    <p id="hora"></p>
+                    <p id="data"></p>
+                </div>
+                <div class="tm"><img src="/imgs/notification.png" alt=""></div>
+            </div>
+
+        </footer>
+    </section>
+</body>
+<script src="/script.js"></script>
+<script src="/pesquisa.js"></script>
+<script src="/barraPesquisa.js"></script>
+</html>

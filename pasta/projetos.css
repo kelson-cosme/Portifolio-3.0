@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+}
+body, html{
+    height: 100%;
+}
+
+.corpo{
+    height: 100%;
+    margin-bottom: 100px;
+}
+header{
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+.fechar{
+    width: 4vw;
+    height: 2.4vw;
+    position: fixed;
+    right: 0;
+    /* background-color: brown; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fechar:hover{
+    background-color: brown;
+}
+.fechar div{
+    width: 1.2vw;
+    height: 0.1vw;
+    background-color: #fff;
+}
+
+.line1{
+    transform: rotate(-45deg) translate( .4vw, .3vw);
+}
+.line2{
+    transform: rotate(45deg) translate(.2vw, -.4vw);
+
+}
+
+
+.pastas{
+    width: 100%;
+    display: flex;
+}
+.pastaEsquerda{
+    width: 15%;
+}
+.pastaDireita{
+    width: 100%;
+    padding: 1vw;
+    border-left: .02vw solid rgba(0, 0, 0, 0.103);
+}
+.pastaDireita a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.listaPasta{
+    list-style-type: none;
+}
+.listaPasta li{
+    display: flex;
+    padding: 0.05vw;
+    padding: .1vw .6vw;
+}
+.listaPasta li:hover{
+    background-color: rgba(8, 224, 224, 0.158);
+}
+.listaPasta li div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1vw;
+}
+.listaPasta img{
+    width: 100%;
+    margin-right: .8vw;
+    margin-bottom: .4vw;
+}
+.listaPasta p{
+    font-size: 1vw;
+}
+
+
+
+.rodape{
+    position: absolute;
+    bottom: 0;
+    width: calc(100%);
+    color: #fff;
+    background-color: black;
+    z-index: 99999;
+    
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapeEsquerda{
+    display: flex;
+}
+.rodapeImg{
+    display: flex;
+    cursor: pointer;
+}
+.rodapeImg img{
+    width: 4vh;
+    padding: .5vw;
+}
+
+/* ---------------- */
+/* Barra Iniciar */
+
+#barraIniciar{
+    width: 40%;
+    height: 80vh;
+    position: fixed;
+    bottom: 6.3vh;
+    z-index: 1;
+
+    display: flex;
+}
+.aparecer{
+    transform: translateY(calc(100% + 6.3vh));
+    transition: .3s;
+    opacity: 0;
+    background-color: rgb(53, 51, 51);
+}
+.aparecerBarra{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.user{
+    width: 10%;
+    bottom: 0;
+    float: inline-end;
+}
+.usuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: black;
+    width: 10%;
+    height: 7vh;
+    margin: auto;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    font-size: 1vw;
+}
+.barraEsquerda{
+    width: 50%;
+    height: 100%;
+
+    overflow: auto;
+
+}
+
+/* ------------------------ */
+.barraEsquerda::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+}
+  
+.barraEsquerda::-webkit-scrollbar-thumb {
+    background-color: #000;    /* color of the scroll thumb */
+    border-radius: 100px;       /* roundness of the scroll thumb */
+}
+/* ------------------------ */
+
+
+
+.barraEsquerda ul{
+    list-style-type: none;
+}
+.barraEsquerda li{
+    padding: .8vw;
+    margin: .9vw 0;
+}
+.barraEsquerda li p{
+    font-size: 1.3vw;
+    margin: 0;
+}
+
+
+.barraDireita{
+    width: 40%;
+    height: 100%;
+}
+.listaDireita{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.listaDireita li{
+    width: 30%;
+    height: 10vh;
+    margin: 1vw;
+    background-color: #fff;
+
+}
+/* -------------------- */
+
+
+
+.pesquisa{
+    display: flex;
+}
+#barraPesquisa{
+    width: 45vw;
+    height: 80vh;
+    background-color: #353333;
+    position: absolute;
+    bottom: 6.2vh;
+    left: 2.89vw;   
+    z-index: 1;
+
+    transition: .3s;
+
+    overflow: auto;
+}
+#barraPesquisa h2{
+    font-size: 2vw;
+    margin: 2vw;
+    width: 4.5vw;
+    padding:  .2vw;
+    border-bottom: .5vw solid blue;
+}
+
+#lista{
+    list-style-type: none;
+    margin: auto;
+}
+#lista p{
+    font-size: 3vw;
+}
+#lista a{
+    display: flex;
+    padding: 2vw;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1vw;
+
+    border-bottom: 1px solid rgba(79, 79, 79, 0.515);
+    width: 85%;
+    margin: auto;
+}
+#lista a:hover{
+    background-color: #fff;
+    color: black;
+}
+.pesquisa2{
+    transform: translateY(calc(100% + 6.2vh));
+}
+#overlay{
+    width: 100vw;
+    height: calc(100% - 6vh);
+    position: fixed;
+    top: 0;
+    display: none;
+}
+.pesquisaAparecer{
+    transform: translateY(0);
+}
+
+.lupa{
+    position: absolute;
+    display: flex;
+    left: 3.5vw;
+    bottom: .5vw;
+}
+.lupa img{
+    width: 4vh;
+}
+input{
+    border: none;
+    width: 25vw;
+    height: calc(1vw + 4vh);
+    background-color: #60606059;
+    padding-left: 3vw;
+    color: #fff;
+    font-size: 1.2vw;
+}
+
+
+.rodapeDireita{
+    display: flex;
+}
+.rodapeDireita div{
+    margin-right: .7vw;
+}
+.horario{
+    font-size: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.horario p{
+    margin: 0;
+    font-size: 1.2vw;
+}
+.tm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.7vw;
+}
+
+.rodapeDireita img{
+    width: 100%;
+    display: flex;
+}

@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body, html{
+    height: 100%;
+    overflow: hidden;
+}
+.corpo{
+    height: 100%;
+    background-image: url("/imgs/windows10.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.c1{ 
+    padding: 2vh;
+}
+.lista{
+    text-align: center;
+    list-style-type: none;
+}
+.lista li div{
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+}
+.icon{
+    background-image: url("/word/imgs/word_icon.png");
+}
+.icon2{
+    background-image: url("/word/imgs/pasta.png");
+}
+.lista li{
+
+    width: 3.2vw;
+    height: 7vh;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5vh;
+}
+p{
+    font-size: 1.2vw;
+    margin-bottom: 3vh;
+}
+
+.rodape{
+    position: absolute;
+    bottom: 0;
+    width: calc(100%);
+    color: #fff;
+    background-color: black;
+    z-index: 99999;
+    
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapeEsquerda{
+    display: flex;
+}
+.rodapeImg{
+    display: flex;
+    cursor: pointer;
+}
+.rodapeImg img{
+    width: 4vh;
+    padding: .5vw;
+}
+
+/* ---------------- */
+/* Barra Iniciar */
+
+#barraIniciar{
+    width: 40%;
+    height: 80vh;
+    position: fixed;
+    bottom: 6.3vh;
+    z-index: 1;
+
+    display: flex;
+}
+.aparecer{
+    transform: translateY(calc(100% + 6.3vh));
+    transition: .3s;
+    opacity: 0;
+    background-color: rgb(53, 51, 51);
+}
+.aparecerBarra{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.user{
+    width: 10%;
+    bottom: 0;
+    float: inline-end;
+}
+.usuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: black;
+    width: 10%;
+    height: 7vh;
+    margin: auto;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    font-size: 1vw;
+}
+.barraEsquerda{
+    width: 50%;
+    height: 100%;
+
+    overflow: auto;
+
+}
+
+/* ------------------------ */
+.barraEsquerda::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+}
+  
+.barraEsquerda::-webkit-scrollbar-thumb {
+    background-color: #000;    /* color of the scroll thumb */
+    border-radius: 100px;       /* roundness of the scroll thumb */
+}
+/* ------------------------ */
+
+
+
+.barraEsquerda ul{
+    list-style-type: none;
+}
+.barraEsquerda li{
+    padding: .8vw;
+    margin: .9vw 0;
+}
+.barraEsquerda li p{
+    font-size: 1.3vw;
+    margin: 0;
+}
+
+
+.barraDireita{
+    width: 40%;
+    height: 100%;
+}
+.listaDireita{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.listaDireita li{
+    width: 30%;
+    height: 10vh;
+    margin: 1vw;
+    background-color: #fff;
+
+}
+/* -------------------- */
+
+
+
+.pesquisa{
+    display: flex;
+}
+#barraPesquisa{
+    width: 45vw;
+    height: 80vh;
+    background-color: #353333;
+    position: absolute;
+    bottom: 6.2vh;
+    left: 2.89vw;   
+    z-index: 1;
+
+    transition: .3s;
+
+    overflow: auto;
+}
+#barraPesquisa h2{
+    font-size: 2vw;
+    margin: 2vw;
+    width: 4.5vw;
+    padding:  .2vw;
+    border-bottom: .5vw solid blue;
+}
+
+#lista{
+    list-style-type: none;
+    margin: auto;
+}
+#lista p{
+    font-size: 3vw;
+}
+#lista a{
+    display: flex;
+    padding: 2vw;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1vw;
+
+    border-bottom: 1px solid rgba(79, 79, 79, 0.515);
+    width: 85%;
+    margin: auto;
+}
+#lista a:hover{
+    background-color: #fff;
+    color: black;
+}
+.pesquisa2{
+    transform: translateY(calc(100% + 6.2vh));
+}
+#overlay{
+    width: 100vw;
+    height: calc(100% - 6vh);
+    position: fixed;
+    top: 0;
+    display: none;
+}
+.pesquisaAparecer{
+    transform: translateY(0);
+}
+
+.lupa{
+    position: absolute;
+    display: flex;
+    left: 3.5vw;
+    bottom: .5vw;
+}
+.lupa img{
+    width: 4vh;
+}
+#lupa{
+    border: none;
+    width: 25vw;
+    height: calc(1vw + 4vh);
+    background-color: #60606059;
+    padding-left: 3vw;
+    color: #fff;
+    font-size: 1.2vw;
+}
+
+
+.rodapeDireita{
+    display: flex;
+}
+.rodapeDireita div{
+    margin-right: .7vw;
+}
+.horario{
+    font-size: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.horario p{
+    margin: 0;
+}
+.tm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.7vw;
+}
+
+.rodapeDireita img{
+    width: 100%;
+    display: flex;
+}
+.headerMobile{
+    display: none;
+}
+.appsMobile{
+    display: none;
+}
+.versaoMobile{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .versaoMobile{
+        max-width: 100%;
+        height: calc(90% - 12vw);
+        display: block;
+        display: flex;
+        overflow: auto;
+	    scroll-snap-type: x mandatory;
+    }
+    .inicial {
+        min-width: 100%;
+        scroll-snap-align: start;	
+    }
+    .corpo{
+        background-image: url("/imgs/mobile/fundo.jfif");
+        background-repeat: no-repeat;
+    }
+    .rodape{
+        display: none;
+    }
+
+    .headerMobile{
+        color: #fff;
+        display: block;
+        width: 100%;
+        background-color: black;
+        margin: 0;
+    }
+    .headerMobile p{
+        font-size: 4vw;
+        padding: .5vh 0 ;
+        margin: 0;
+        text-align: end;
+        margin-right: 2vw;
+    }
+    
+    .pesquisaDentro{
+        margin-top: 3vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+    .pesquisaDentro img{
+        position: absolute;
+        right: 7vw;
+        top: 12vw;
+        width: 5vw;
+    }
+    .pesquisaMobile{
+        width: calc(90% - 10vw);    
+        height: 3vh;
+        border: none;
+        background-color: #353333;
+        padding: 2vw 5vw;
+        border-radius: 2vw;
+        color: #fff;
+    }
+    .listApp{
+        list-style-type: none;
+        width: 90%;
+        margin: auto;
+        margin-top: 5vw;
+        color: #fff;
+        font-size: 5vw;
+
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .listApp li{
+        width: 17vw;
+        text-align: center;
+        margin: 2vw;
+        overflow: hidden;
+    }
+    .listApp a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .listApp img{
+        width: 100%;
+    }
+    .listApp div{
+        width: 100%;
+        height: 16vw;
+    }
+
+    /* ------------------------- */
+    /* Aplicativos */
+    
+   
+    .listApp li{
+        transition: 1s;
+    }
+    .listApp li:hover{
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+
+    .linkedin{
+        background-image: url("/imgs/mobile/linkedin.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 1vw;
+    }
+    .github{
+        background-image: url("/imgs/mobile/github.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 1vw;
+        
+    }
+
+    /* ------------------------- */
+    .titulo{
+        color: #ffff;
+        text-align: center;
+        text-shadow: 0 0 0.2em black;
+        border-bottom: 1px solid #fff;
+        width: 40%;
+        margin: auto;
+        margin-top: .5vh;
+
+    }
+    .listApp p{
+        font-size: 3.5vw;
+        margin-top: 1vw;
+        text-shadow: 0 0 0.2em black, 0 0 0.2em black,
+        0 0 0.2em #fff;
+        font-weight: bolder;
+    }
+
+
+
+    .appsMobile{
+        display: block;
+        list-style-type: none;
+
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 2vw;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1vw;
+
+    }
+    .appsMobile li{
+        width: 12vw;
+
+    }
+    .appsMobile img{
+        width: 100%;
+
+    }
+    .conteudo{
+        display: none;
+    }
+
+    /* Spotify */
+
+    .playlist{
+        display: flex;
+        justify-content: center;
+    }
+    iframe{
+        margin: auto;
+        margin-top: 2vh;
+        border-radius: 10px;
+        width: calc(100% - 10vw);    
+        height: 50vh;
+    }
+}
